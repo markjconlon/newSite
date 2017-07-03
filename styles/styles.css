@@ -73,6 +73,10 @@ a{
 .Arrow{
   align-self: center;
 }
+.Arrow:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .pProjectIMG{
   width: 80vw;
   align-self: center;
@@ -80,6 +84,9 @@ a{
 .pProjectIMG img{
   width: 100%;
   align-self: center;
+}
+.pProjectIMG img:hover{
+  transform: translate(1em, -1em);
 }
 .displayNone{
   display: none;

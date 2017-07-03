@@ -13,7 +13,6 @@ $( document ).ready(function() {
       current -= 1;
     }
   });
-  
   $("#rArrow").on("click", function(){
     $("#" + pastProjectsIndex[current]).addClass('displayNone');
     if (current >= pastProjectsIndex.length - 1 ) {
