@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   var current = 0;
-  var pastProjectsIndex = ["pp1", "pp2"];
+  var pastProjectsIndex = ["pp1", "pp2", "pp3"];
 
   $("#lArrow").on("click", function(){
     $("#" + pastProjectsIndex[current]).addClass('displayNone');
