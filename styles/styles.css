@@ -1,0 +1,64 @@
+a{
+  text-decoration: none;
+}
+.background{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("background.png");
+  background-size: cover;
+}
+
+.iLinks{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid whitesmoke;
+  flex-wrap: wrap;
+}
+
+.iLinks h2{
+  color: whitesmoke;
+  font-size: 1.75em;
+  display: flex;
+  margin: 1em;
+  border: 1px solid whitesmoke;
+  border-radius: 0.1em;
+  padding: 0.2em;
+}
+.name{
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.name h1 {
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  font-size: 3em;
+  text-align: center;
+}
+.name h2 {
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  font-size: 2em;
+  text-align: center;
+}
+
+.eLinks{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 2em;
+}
+.eLinks a{
+  color: whitesmoke;
+  font-size: 3em;
+  background-color: black;
+  border-radius: 0.2em;
+}
+.skills{
+  height: 100vh;
+  width: 100vw;
+  background: #373737;
+}
