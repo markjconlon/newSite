@@ -57,11 +57,14 @@ a{
   background-color: black;
   border-radius: 0.2em;
 }
+.eLinks a:hover{
+  transform: scale(1.5);
+}
 
 .pastProjects{
   height: 100vh;
   width: 100vw;
-  background: #373737;
+  background: #B0C3F2;
   display: flex;
   justify-content: space-between;
 }
@@ -73,7 +76,7 @@ a{
 }
 .Arrow{
   align-self: center;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .Arrow:hover{
   cursor: pointer;
@@ -105,20 +108,53 @@ a{
 .skills{
   height: 100vh;
   width: 100vw;
-  background: #whitesmoke;
-  display: flex;
-  justify-content: space-around;
+  background: whitesmoke;
+}
+.skillsSpecfics{
+  width: 100%;
+  display: inline-flex;
 }
 .skill_images{
-  width: 60vmin;
-  height: 60vmin;
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 .skill_images img{
-  height: 120px;
-  width: 120px;
-  display: flex;
-  justify-content: space-between;
+  width: 24%;
+}
+.skills img:hover{
+  cursor: default;
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out 0s;
+  cursor: pointer;, cursor: hand;
+}
+.skills p{
+  width: 80%;
+  margin-left: 10%;
+  padding-top: 8%;
+  text-align: justify;
+  color: #B0C3F2;
+  font-size: 1.2em;
+}
+#skill_images_des{
+  margin-top: 5%;
+  margin-left: 4%;
+  width: 35%;
+  align-self: center;
+  padding-top: 0;
+  background-color: #B0C3F2;
+  color: #373737;
+  padding: 0.75em;
+  border-radius: 5px;
+  font-style: italic;
+}
+#scrollToTop{
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 100000;
+  font-size: 2.5em;
+  color: #777777;
+  font-weight: 600;
+  transform: scaleX(2.5);
 }
