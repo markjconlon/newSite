@@ -3,16 +3,23 @@ $( document ).ready(function() {
   var activeSkillDes = "RoR";
   var pastProjectsIndex = ["pp1", "pp2", "pp3"];
 
-  $("#skill_images > img").on("click", skillDescription);
 
+  $("#skill_images > img").on("click", skillDescription);
+  $(document).on('click', '.iLinks a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+  });
   function checkScrollPosition() {
     $(window).scrollTop() > 450 ? $('#scrollToTop').fadeIn('slow') : $('#scrollToTop').fadeOut('slow');
   };
   $(window).scroll(checkScrollPosition); // check on scroll
   checkScrollPosition(); // check on load
 
-  $("#scrollToTop").on("click", function(){
-    window.scrollTo(0,0)
+  $("#scrollToTop").on("click", function () {
+    window.scrollTo(0, 0)
   });
 
   $("#lArrow").on("click", function(){
